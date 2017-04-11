@@ -1,0 +1,205 @@
+/* раздел шапки */
+header {
+
+    z-index: 10;
+}
+.top_head {
+    margin: 15px auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.logo {
+    float: left;
+    margin-left: 15px;
+}
+
+#search{
+    display: inline;
+    font-size: 0;
+}
+
+#search input{
+    margin-left: -200px;
+    margin-top: 13px;
+    width: 20%;
+    font-size: 20px;
+}
+
+#basket {
+    display: inline;
+    float: right;
+    margin-right: 15px;
+}
+
+#basket ul{
+    margin: 0 auto;
+}
+#basket li {
+    display: inline;
+}
+
+#submenu {
+    border-bottom:2px solid #e0e0e0;
+    border-top: 2px solid #e0e0e0;
+    height: 34px;
+    margin-top: 20px;
+}
+
+#submenu ul {
+    text-align: center;
+    height: 600px;
+    font-size: 0; /* убираем нежелательные отсутпы у дочерних элементов */
+}
+#submenu li {
+    display: inline-block; /* позволяем vertical-align выравнивать себя по вертикали */
+    vertical-align: middle; /* и выравниваем */
+}
+#submenu li a {
+    border-right: 1px solid #E0E0E0;
+    line-height: 5px;
+    color: #383838;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 14px 100px 14px 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-page{
+    display: table;
+    text-align: center;
+    margin: 15px auto;
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.banner-container{
+    width: 1180px;
+}
+
+.banner-container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#left-banner-container{
+    width: 780px;
+    float: left;
+    margin-right: 20px;
+}
+
+#left-banner-container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#left-top-banner{
+    float: left;
+    width: 380px;
+    margin-right: 20px;
+    font-size: 0;
+}
+
+#right-top-banner{
+    float: left;
+    width: 380px;
+    font-size: 0;
+}
+
+#left-bottom-banner{
+    margin-top: 20px;
+    float: left;
+    width: 780px;
+    font-size: 0;
+}
+
+#right-banner-container{
+    float: left;
+    width: 380px;
+    font-size: 0;
+}
+
+.new-arrivals-window{
+    padding-top: 40px;
+    text-align: center;
+}
+
+.shoe{
+    display: inline;
+    margin-right: 30px;
+}
+
+.shop-window{
+    text-align: center;
+    margin: 20px;
+    padding-top: 40px;
+}
+
+.about{
+    width: 1181.33px
+}
+
+.about-container{
+    text-align: left;
+}
+.about-container div{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
