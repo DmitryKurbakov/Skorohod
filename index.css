@@ -1,68 +1,55 @@
-/* раздел шапки */
+html {
+    background: #ccc;
+    min-height: 100%;
+    display: flex;
+}
 body{
     margin: 0 0 0 0;
 }
 
-header {
-    z-index: 10;
-}
 
-.top-head {
-    margin: auto;
-}
+header{
+    /* «включаем» FlexBox режим */
+    display: flex;
 
-.headers-container{
-    position: absolute;
-    white-space: nowrap;
-    text-align: center;
-}
+    /* Размещаем элементы внутри шапки */
+    justify-content: space-between;
 
-.headers-container:before {
-    height: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    content: '';
-}
-
-
-
-.top-head .left-top-head{
-    display: inline-block;
-    white-space: normal;
-    vertical-align: middle;
-    text-align: left;
-}
-
-.top-head .right-top-head{
+    /* Выравниваем элементы вертикально посередине*/
 
 }
 
-.top-head .middle-top-head{
-
+.left-top-head{
+    justify-content: flex-start;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    flex-basis: 0;
 }
 
-#logo-content-con{
+.right-top-head{
+    justify-content: flex-end;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
 }
+
+.center-top-head{
+    justify-content: center;
+    display: flex;
+    flex-grow: 3;
+    align-items: center;
+}
+
 
 .logo {
 
 }
-
-.search-area{
-
-}
-
 .input-wrap{
-
 }
-
-.search-area .input-wrap input[type="text"] {
-}
-
 
 .basket-con{
-    font-size: 12px;
-
+    padding-right: 20px;
 }
 
 .basket {
@@ -74,24 +61,18 @@ header {
 }
 
 #submenu {
-    text-align: center;
-    border-bottom:2px solid #e0e0e0;
-    border-top: 2px solid #e0e0e0;
-    height: 34px;
-    margin-top: 20px;
+
 }
 
 .submenu-con{
-    white-space: nowrap;
-    display: inline-block;
-    text-align: center;
-    height: 600px;
-    font-size: 0; /* убираем нежелательные отсутпы у дочерних элементов */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
 }
 
 .submenu-it {
-    display: inline-block; /* позволяем vertical-align выравнивать себя по вертикали */
-    vertical-align: middle; /* и выравниваем */
 }
 
 #submenu div a {
@@ -101,13 +82,14 @@ header {
     display: block;
     font-size: 12px;
     font-weight: bold;
-    padding: 14px 100px 14px 100px;
+    padding: 14px 50px 14px 50px;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 .main-page{
-    display: table;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin: 15px auto;
 }
@@ -120,6 +102,7 @@ header {
 
 .banner-container{
     width: 1180px;
+    margin: auto;
 }
 
 .banner-container:after{
@@ -167,6 +150,7 @@ header {
 }
 
 .new-arrivals-window{
+    margin: auto;
     padding-top: 40px;
     text-align: center;
 }
@@ -177,12 +161,14 @@ header {
 }
 
 .shop-window{
+    margin: auto;
     text-align: center;
     margin: 20px;
     padding-top: 40px;
 }
 
 .about{
+    margin: auto;
     width: 1181.33px
 }
 
@@ -194,6 +180,7 @@ header {
 }
 
 #footer{
+    margin: auto;
     text-align: center;
     width: 100%;
     height: 200px;
@@ -203,6 +190,7 @@ header {
 
 
 #footer li{
+    position: relative;
     list-style-type: none;
     font-size: 16px;
 }
@@ -213,14 +201,14 @@ header {
 
 
 .wrapper{
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
     padding-top: 20px;
     white-space: nowrap;
 
 }
 
 .footer-con{
-    display: inline-block;
     float: left;
     text-align: left;
     width: 314px;

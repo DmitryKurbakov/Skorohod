@@ -1,65 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Название бренда</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<header>
+    <!-- Раздел шапки страницы -->
 
-<div>
-    <header><!-- Раздел шапки страницы -->
-
-        <div class="top-head"><!-- Элемент верха шапки страницы -->
-
-            <div class="headers-container">
-                <div class="left-top-head">
-                    <div class="logo"><!-- Логотип -->
-                        <div id="logo-content-con">
-                            <a href="https://www.script-tutorials.com/">
-                                <img src="assets/logo.jpg"/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="middle-top-head">
+        <!-- Элемент верха шапки страницы -->
+            <div class="left-top-head">
+                    <a class="logo" href="https://www.script-tutorials.com/">
+                        <img src="assets/logo.jpg"/>
+                    </a>
+            </div>
+            <div class="center-top-head">
                     <div class="input-wrap">
                         <input type="text" id="search" placeholder="Поиск">
                     </div>
-                </div>
-
-                <div class="right-top-head">
+            </div>
+            <div class="right-top-head">
                     <div class="basket-con">
                         <div class="basket">
                             <a href="#">Корзина</a>
                         </div>
                         <div class="login">
                             <a href="#">Войти</a>
+                        </div>
                     </div>
-                    </div>
-                </div>
             </div>
             <!--<div id="search">
                 <input>
                 <a href="assets"><img src="assets/sc6050.jpg"></a>
             </div>
-
             -->
-        </div>
 
-        <section id="submenu"><!-- Дополнительное меню -->
-            <div class="submenu-con">
-                <div class="submenu-it"><a href="#">Женская</a></div>
-                <div class="submenu-it"><a href="#">Мужская</a></div>
-                <div class="submenu-it"><a href="#">Детская</a></div>
-                <div class="submenu-it"><a style="border-right: 0" href="#" href="#">Сумки и аксессуары</a></div>
-            </div>
-        </section>
 
-    </header>
 
+</header>
+
+<div id="submenu"><!-- Дополнительное меню -->
+    <div class="submenu-con">
+        <div class="submenu-it"><a href="#">Женская</a></div>
+        <div class="submenu-it"><a href="#">Мужская</a></div>
+        <div class="submenu-it"><a href="#">Детская</a></div>
+        <div class="submenu-it"><a style="border-right: 0; white-space: nowrap;" href="#" href="#">Сумки и аксессуары</a></div>
+    </div>
 </div>
 
 <div class="main-page">
@@ -103,46 +91,46 @@
     </div>
 
 
-
-</div>
-
-<div id="footer">
-    <div class="wrapper">
-        <div id ="about-footer" class="footer-con">
-            <div class="li-header">О компании</div>
-            <ul>
-                <li>Контакты</li>
-                <li>Вакансии</li>
-                <li>Партнерам</li>
-            </ul>
-        </div>
-        <div id="help-footer" class="footer-con">
-            <div class="li-header">Помощь</div>
-            <ul>
-                <li>Как оформить заказ</li>
-                <li>Как подобрать размер</li>
-                <li>Условия доставки</li>
-                <li>Возврат</li>
-            </ul>
-        </div>
-        <div id="social-footer" class="footer-con">
-            <div class="li-header">Мы в соцсетях</div>
-            <ul>
-                <li><img src="assets/social_icons/vk.png"></li>
-                <li><img src="assets/social_icons/facebook.jpg"></li>
-                <li><img src="assets/social_icons/o.jpg"></li>
-                <li><img src="assets/social_icons/instagram-logo.png"></li>
-            </ul>
-        </div>
-        <div id="payment-footer" class="footer-con">
-            <div class="li-header">Способы оплаты</div>
-            <ul>
-                <li><img src="assets/payment/visa.png"></li>
-                <li><img src="assets/payment/mastercard.png"></li>
-            </ul>
+    <div id="footer">
+        <div class="wrapper">
+            <div id ="about-footer" class="footer-con">
+                <div class="li-header">О компании</div>
+                <ul>
+                    <li>Контакты</li>
+                    <li>Вакансии</li>
+                    <li>Партнерам</li>
+                </ul>
+            </div>
+            <div id="help-footer" class="footer-con">
+                <div class="li-header">Помощь</div>
+                <ul>
+                    <li>Как оформить заказ</li>
+                    <li>Как подобрать размер</li>
+                    <li>Условия доставки</li>
+                    <li>Возврат</li>
+                </ul>
+            </div>
+            <div id="social-footer" class="footer-con">
+                <div class="li-header">Мы в соцсетях</div>
+                <ul>
+                    <li><img src="assets/social_icons/vk.png"></li>
+                    <li><img src="assets/social_icons/facebook.jpg"></li>
+                    <li><img src="assets/social_icons/o.jpg"></li>
+                    <li><img src="assets/social_icons/instagram-logo.png"></li>
+                </ul>
+            </div>
+            <div id="payment-footer" class="footer-con">
+                <div class="li-header">Способы оплаты</div>
+                <ul>
+                    <li><img src="assets/payment/visa.png"></li>
+                    <li><img src="assets/payment/mastercard.png"></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
+
+
 
 </body>
 </html>
