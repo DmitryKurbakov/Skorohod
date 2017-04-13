@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Название бренда</title>
     <link rel="stylesheet" href="index.css">
@@ -10,34 +11,53 @@
 <div>
     <header><!-- Раздел шапки страницы -->
 
-        <div class="top_head"><!-- Элемент верха шапки страницы -->
-            <div class="logo"><!-- Логотип -->
-                <a href="https://www.script-tutorials.com/">
-                    <img src="assets/logo.jpg" title="E-Store template" alt="E-Store template" />
-                </a>
-            </div>
+        <div class="top-head"><!-- Элемент верха шапки страницы -->
 
-            <div id="search">
+            <div class="headers-container">
+                <div class="left-top-head">
+                    <div class="logo"><!-- Логотип -->
+                        <div id="logo-content-con">
+                            <a href="https://www.script-tutorials.com/">
+                                <img src="assets/logo.jpg"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="middle-top-head">
+                    <div class="input-wrap">
+                        <input type="text" id="search" placeholder="Поиск">
+                    </div>
+                </div>
+
+                <div class="right-top-head">
+                    <div class="basket-con">
+                        <div class="basket">
+                            <a href="#">Корзина</a>
+                        </div>
+                        <div class="login">
+                            <a href="#">Войти</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div id="search">
                 <input>
                 <a href="assets"><img src="assets/sc6050.jpg"></a>
             </div>
 
-            <div id="basket">
-                <ul><!-- Значки социальных сетей -->
-                    <li><a href="#" title="Войти" rel="external nofollow">Войти</a></li>
-                    <li><a href="#" title="Корзина" rel="external nofollow">Корзина</a></li>
-                </ul>
-            </div>
+            -->
         </div>
 
         <section id="submenu"><!-- Дополнительное меню -->
-            <ul>
-                <li><a href="#">Женская</a></li>
-                <li><a href="#">Мужская</a></li>
-                <li><a href="#">Детская</a></li>
-                <li><a style="border-right: 0" href="#" href="#">Сумки и аксессуары</a></li>
-            </ul>
+            <div class="submenu-con">
+                <div class="submenu-it"><a href="#">Женская</a></div>
+                <div class="submenu-it"><a href="#">Мужская</a></div>
+                <div class="submenu-it"><a href="#">Детская</a></div>
+                <div class="submenu-it"><a style="border-right: 0" href="#" href="#">Сумки и аксессуары</a></div>
+            </div>
         </section>
+
     </header>
 
 </div>
@@ -77,11 +97,53 @@
 
     <div class="about">
         <div class="about-container">
-            <h2>Заголовок</h2>
+            <h2>О нас</h2>
             <div>Официальный интернет-магазин ECCO представляет коллекцию обуви весна-лето 2016 и лучшие модели прошлых сезонов. Выбирайте классические туфли и сумки из кожи премиум-класса, кроссовки и рюкзаки, ботинки на каждый день и аксессуары для вашего гардероба. Скандинавский стиль ECCO легко вбирает в себя модные тренды — в коллекциях есть актуальные хайтопы, слипоны, сникеры, и конечно, классическая качественная обувь. Оцените легкость, мягкость и комфорт, которые принесли датскому бренду популярность в 88 странах мира. За внешним совершенством дизайна скрыта колоссальная работа с материалами и технологиями, благодаря которой стильная обувь становится по-настоящему удобной. </div>
         </div>
     </div>
+
+
+
 </div>
+
+<div id="footer">
+    <div class="wrapper">
+        <div id ="about-footer" class="footer-con">
+            <div class="li-header">О компании</div>
+            <ul>
+                <li>Контакты</li>
+                <li>Вакансии</li>
+                <li>Партнерам</li>
+            </ul>
+        </div>
+        <div id="help-footer" class="footer-con">
+            <div class="li-header">Помощь</div>
+            <ul>
+                <li>Как оформить заказ</li>
+                <li>Как подобрать размер</li>
+                <li>Условия доставки</li>
+                <li>Возврат</li>
+            </ul>
+        </div>
+        <div id="social-footer" class="footer-con">
+            <div class="li-header">Мы в соцсетях</div>
+            <ul>
+                <li><img src="assets/social_icons/vk.png"></li>
+                <li><img src="assets/social_icons/facebook.jpg"></li>
+                <li><img src="assets/social_icons/o.jpg"></li>
+                <li><img src="assets/social_icons/instagram-logo.png"></li>
+            </ul>
+        </div>
+        <div id="payment-footer" class="footer-con">
+            <div class="li-header">Способы оплаты</div>
+            <ul>
+                <li><img src="assets/payment/visa.png"></li>
+                <li><img src="assets/payment/mastercard.png"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
 
