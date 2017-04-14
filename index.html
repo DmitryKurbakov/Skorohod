@@ -5,37 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Название бренда</title>
     <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
 <header>
     <!-- Раздел шапки страницы -->
 
-        <!-- Элемент верха шапки страницы -->
-            <div class="left-top-head">
-                    <a class="logo" href="https://www.script-tutorials.com/">
-                        <img src="assets/logo.jpg"/>
-                    </a>
+    <!-- Элемент верха шапки страницы -->
+    <div class="left-top-head">
+        <a class="logo" href="https://www.script-tutorials.com/">
+            <img src="assets/logo.jpg"/>
+        </a>
+    </div>
+    <div class="center-top-head">
+        <div class="input-wrap">
+            <input type="text" id="search" placeholder="Поиск">
+        </div>
+    </div>
+    <div class="right-top-head">
+        <div class="basket-con">
+            <div class="basket">
+                <a href="#">Корзина</a>
             </div>
-            <div class="center-top-head">
-                    <div class="input-wrap">
-                        <input type="text" id="search" placeholder="Поиск">
-                    </div>
+            <div class="login">
+                <a href="#">Войти</a>
             </div>
-            <div class="right-top-head">
-                    <div class="basket-con">
-                        <div class="basket">
-                            <a href="#">Корзина</a>
-                        </div>
-                        <div class="login">
-                            <a href="#">Войти</a>
-                        </div>
-                    </div>
-            </div>
-            <!--<div id="search">
-                <input>
-                <a href="assets"><img src="assets/sc6050.jpg"></a>
-            </div>
-            -->
+        </div>
+    </div>
+    <!--<div id="search">
+       <input>
+       <a href="assets"><img src="assets/sc6050.jpg"></a>
+   </div>
+   -->
 
 
 
@@ -43,9 +44,15 @@
 
 <div id="submenu"><!-- Дополнительное меню -->
     <div class="submenu-con">
-        <div class="submenu-it"><a href="#">Женская</a></div>
-        <div class="submenu-it"><a href="#">Мужская</a></div>
-        <div class="submenu-it"><a href="#">Детская</a></div>
+        <div class="submenu-it">
+            <a href="#">Для женщин</a>
+            <ul id="for-women">
+                <li>punkt1</li>
+                <li>punkt2</li>
+            </ul>
+        </div>
+        <div class="submenu-it"><a href="#">Для мужчин</a></div>
+        <div class="submenu-it"><a href="#">Для детей</a></div>
         <div class="submenu-it"><a style="border-right: 0; white-space: nowrap;" href="#" href="#">Сумки и аксессуары</a></div>
     </div>
 </div>
@@ -95,36 +102,35 @@
         <div class="wrapper">
             <div id ="about-footer" class="footer-con">
                 <div class="li-header">О компании</div>
-                <ul>
-                    <li>Контакты</li>
-                    <li>Вакансии</li>
-                    <li>Партнерам</li>
-                </ul>
+                <div>Контакты</div>
+                <div>Вакансии</div>
+                <div>Партнерам</div>
             </div>
             <div id="help-footer" class="footer-con">
                 <div class="li-header">Помощь</div>
-                <ul>
-                    <li>Как оформить заказ</li>
-                    <li>Как подобрать размер</li>
-                    <li>Условия доставки</li>
-                    <li>Возврат</li>
-                </ul>
+                <div>Как оформить заказ</div>
+                <div>Как подобрать размер</div>
+                <div>Условия доставки</div>
+                <div>Возврат</div>
             </div>
+
             <div id="social-footer" class="footer-con">
                 <div class="li-header">Мы в соцсетях</div>
-                <ul>
-                    <li><img src="assets/social_icons/vk.png"></li>
-                    <li><img src="assets/social_icons/facebook.jpg"></li>
-                    <li><img src="assets/social_icons/o.jpg"></li>
-                    <li><img src="assets/social_icons/instagram-logo.png"></li>
-                </ul>
+                <div class="social-footer-col">
+                    <div><img src="assets/social_icons/vk.png"></div>
+                    <div><img src="assets/social_icons/facebook.jpg"></div>
+                    <div><img src="assets/social_icons/o.jpg"></div>
+                    <div><img src="assets/social_icons/instagram-logo.png"></div>
+                </div>
             </div>
             <div id="payment-footer" class="footer-con">
-                <div class="li-header">Способы оплаты</div>
-                <ul>
-                    <li><img src="assets/payment/visa.png"></li>
-                    <li><img src="assets/payment/mastercard.png"></li>
-                </ul>
+                <div class="payment-head">
+                    <div class="li-header">Способы оплаты</div>
+                </div>
+                <div class="payment-footer-col">
+                    <div><img src="assets/payment/visa.png"></div>
+                    <div><img src="assets/payment/mastercard.png"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -134,37 +140,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
