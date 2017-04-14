@@ -82,11 +82,12 @@ header{
 .submenu-it {
 }
 
+
+
 #submenu div a {
     border-right: 1px solid #E0E0E0;
     line-height: 5px;
     color: #383838;
-    display: block;
     font-size: 12px;
     font-weight: bold;
     padding: 14px 50px 14px 50px;
