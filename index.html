@@ -8,8 +8,80 @@
     <link rel="stylesheet" href="extra.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
+        $(document).ready(function(){
 
+            $('#for-women-con').mouseover(function(){
+                var windowWidth = $('#for-women-con').outerWidth() + $('#for-men-con').outerWidth() + $('#for-children-con').outerWidth() + $('#bags-con').outerWidth();
+                $('#for-women').css('display','flex').css('width', windowWidth).append("<div>Обувь</div>" +
+                    "<div>Все</div>" +
+                    "<div>Классическая</div>" +
+                    "<div>Повседневная</div>" +
+                    "<div>Спортивная</div>" +
+                    "<div>Ботильоны</div>" +
+                    "<div>Ботинки</div>" +
+                    "<div>Кеды</div>" +
+                    "<div>Полуботинки</div>" +
+                    "<div>Слипоны</div>" +
+                    "<div>Туфли</div>" +
+                    "<div>Макасины</div>");
+            }).mouseout(function () {
+                $('#for-women').css('display','none').empty();
+            });
 
+            $('#for-men-con').mouseover(function(){
+                var windowWidth = $('#for-women-con').outerWidth() + $('#for-men-con').outerWidth() + $('#for-children-con').outerWidth() + $('#bags-con').outerWidth();
+                $('#for-women').css('display','flex').css('width', windowWidth).append("<div>Обувь</div>" +
+                "<div>Все</div>" +
+                "<div>Классическая</div>" +
+                "<div>Повседневная</div>" +
+                "<div>Спортивная</div>" +
+                "<div>Ботинки</div>" +
+                "<div>Кеды</div>" +
+                "<div>Полуботинки</div>" +
+                "<div>Кроссовки</div>" +
+                "<div>Слипоны</div>" +
+                "<div>Туфли</div>" +
+                "<div>Макасины</div>")
+            }).mouseout(function () {
+                $('#for-women').css('display','none').empty();
+            });
+
+            $('#for-children-con').mouseover(function(){
+                var windowWidth = $('#for-women-con').outerWidth() + $('#for-men-con').outerWidth() + $('#for-children-con').outerWidth() + $('#bags-con').outerWidth();
+                $('#for-women').css('display','flex').css('width', windowWidth).append("<div>Обувь</div>" +
+                    "<div>Мальчикам</div>" +
+                    "<div>Ботинки</div>" +
+                    "<div>Полуботинки</div>" +
+                    "<div>Кроссовки</div>" +
+                    "<div>Слипоны</div>" +
+                    "<div>Кеды</div>" +
+                    "<div>Полуботинки</div>" +
+                    "<div>Кроссовки</div>" +
+                    "<div>Слипоны</div>" +
+                    "<div>Туфли</div>" +
+                    "<div>Макасины</div>")
+            }).mouseout(function () {
+                $('#for-women').css('display','none').empty();
+            });
+
+            $('#bags-con').mouseover(function(){
+                var windowWidth = $('#for-women-con').outerWidth() + $('#for-men-con').outerWidth() + $('#for-children-con').outerWidth() + $('#bags-con').outerWidth();
+                $('#for-women').css('display','flex').css('width', windowWidth).append("<div>Обувь</div>" +
+                    "<div></div>" +
+                    "<div>Классическая</div>" +
+                    "<div>Повседневная</div>" +
+                    "<div>Спортивная</div>" +
+                    "<div>Ботинки</div>" +
+                    "<div>Кеды</div>" +
+                    "<div>Полуботинки</div>" +
+                    "<div>Кроссовки</div>" +
+                    "<div>Слипоны</div>" +
+                    "<div>Туфли</div>" +
+                    "<div>Макасины</div>")
+            }).mouseout(function () {
+                $('#for-women').css('display','none').empty();
+            });
+        });
     </script>
 </head>
 <body>
@@ -50,19 +122,35 @@
 <div id="submenu"><!-- Дополнительное меню -->
     <div class="submenu-con">
         <div class="submenu-it">
-            <a href="#">Для женщин</a>
+            <a id='for-women-con' href="#">Для женщин</a>
             <div id="for-women">
-                <div class="for-women-content">punkt1</div>
-                <div class="for-women-content">punkt2</div>
+
             </div>
         </div>
-        <div class="submenu-it"><a href="#">Для мужчин</a></div>
-        <div class="submenu-it"><a href="#">Для детей</a></div>
-        <div class="submenu-it"><a style="border-right: 0; white-space: nowrap;" href="#" href="#">Сумки и аксессуары</a></div>
+        <div class="submenu-it">
+            <a href="#" id="for-men-con">Для мужчин</a></div>
+            <div id="for-men">
+
+            </div>
+        <div class="submenu-it">
+            <a href="#" id="for-children-con">Для детей</a></div>
+            <div id="#for-children">
+
+            </div>
+        <div class="submenu-it">
+            <a id="bags-con" style="border-right: 0; white-space: nowrap;" href="#" href="#">Сумки и аксессуары</a>
+            <div id="bags">
+
+            </div>
+        </div>
     </div>
+
+
 </div>
 
 <div class="main-page">
+
+
 
     <div class="banner-container">
         <div id="left-banner-container">

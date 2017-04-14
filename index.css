@@ -14,31 +14,30 @@ header{
     display: flex;
 
     /* Размещаем элементы внутри шапки */
-    justify-content: space-between;
+    justify-content: flex-start;
 
     /* Выравниваем элементы вертикально посередине*/
 
 }
 
 .left-top-head{
+    width: 33.33%;
     justify-content: flex-start;
     display: flex;
-    flex-grow: 1;
     align-items: center;
-    flex-basis: 0;
 }
 
 .right-top-head{
+    width: 33.33%;
     justify-content: flex-end;
     display: flex;
-    flex-grow: 1;
     align-items: center;
 }
 
 .center-top-head{
+    width: 33.33%;
     justify-content: center;
     display: flex;
-    flex-grow: 6;
     align-items: center;
 }
 
@@ -90,9 +89,30 @@ header{
     color: #383838;
     font-size: 12px;
     font-weight: bold;
-    padding: 14px 50px 14px 50px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+#for-women-con{
+    padding-left: 0;
+    padding-right: 50px;
+}
+
+#bags-con{
+    padding-right: 0;
+    padding-left: 50px;
+}
+
+#for-men-con{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#for-children-con{
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .main-page{
@@ -102,58 +122,44 @@ header{
     margin: 15px auto;
 }
 
-*, *:after, *:before {
+/**, *:after, *:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+*/
 .banner-container{
-    width: 1180px;
+    width: 1160px;
     margin: auto;
-}
-
-.banner-container:after{
-    content: "";
-    display: table;
-    clear: both;
+    display: flex;
+    justify-content: center;
 }
 
 #left-banner-container{
-    width: 780px;
-    float: left;
-    margin-right: 20px;
-}
-
-#left-banner-container:after{
-    content: "";
-    display: table;
-    clear: both;
+    width: 66.66%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #left-top-banner{
-    float: left;
     width: 380px;
-    margin-right: 20px;
     font-size: 0;
 }
 
 #right-top-banner{
-    float: left;
     width: 380px;
     font-size: 0;
 }
 
 #left-bottom-banner{
-    margin-top: 20px;
-    float: left;
     width: 780px;
     font-size: 0;
 }
 
 #right-banner-container{
-    float: left;
-    width: 380px;
+    width: 33.33%;
     font-size: 0;
 }
 
