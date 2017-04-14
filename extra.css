@@ -1,0 +1,21 @@
+#for-women{
+    display: none;
+    background-color: aqua;
+    z-index: 100;
+    position: fixed;
+    height: 100px;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#for-men{
+    display: none;
+    background-color: aquamarine;
+    z-index: 100;
+    position: fixed;
+    height: 100px;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
