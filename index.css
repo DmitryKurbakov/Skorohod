@@ -1,8 +1,8 @@
 html {
     background: #ccc;
-    min-height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 body{
     margin: 0 0 0 0;
@@ -14,12 +14,15 @@ header{
     display: flex;
 
     /* Размещаем элементы внутри шапки */
-    justify-content: flex-start;
+    justify-content: center;
 
+    flex-direction: row;
     /* Выравниваем элементы вертикально посередине*/
+
 
 }
 
+/*---------------------HEADER--------------------*/
 .left-top-head{
     width: 33.33%;
     justify-content: flex-start;
@@ -41,85 +44,53 @@ header{
     align-items: center;
 }
 
-
-.logo {
-
-}
 .input-wrap{
-    padding-left: 100px;
-    padding-right: 135px;
+    width: 40%;
 }
 
-#search{
-    width: 300px;
+.input-wrap input {
+    width: 100%;
+    border: none;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
-.basket-con{
-    padding-right: 20px;
+.basket-container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 5%;
 }
 
-.basket {
-    display: inline-block;
+#basket {
+    margin-right: 10%;
 }
 
-.login{
-    display: inline-block;
-}
-
+/*-----------------SUBMENU------------------*/
 #submenu {
-
-}
-
-.submenu-con{
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
+}
+
+#submenu-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
 }
 
 .submenu-it {
+    margin: 0 5px 0 5px;
 }
 
-
-
-#submenu div a {
-    border-right: 1px solid #E0E0E0;
-    line-height: 5px;
-    color: #383838;
-    font-size: 12px;
-    font-weight: bold;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    text-decoration: none;
-    text-transform: uppercase;
+.submenu-it a {
+    white-space: nowrap;
 }
 
-#for-women-con{
-    padding-left: 0;
-    padding-right: 50px;
-}
-
-#bags-con{
-    padding-right: 0;
-    padding-left: 50px;
-}
-
-#for-men-con{
-    padding-right: 50px;
-    padding-left: 50px;
-}
-
-#for-children-con{
-    padding-right: 50px;
-    padding-left: 50px;
-}
-
+/*---------------MAIN_PAGE----------------------*/
 .main-page{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 15px auto;
 }
 
 /**, *:after, *:before {
@@ -128,40 +99,71 @@ header{
     box-sizing: border-box;
 }
 */
-.banner-container{
-    width: 1160px;
-    margin: auto;
+
+/*-------------------BANNERS------------------------*/
+
+.top-banners-container {
+    margin-top: 10px;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-#left-banner-container{
-    width: 66.66%;
+.top-banners-warp {
+    width: 1240px;
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0;
     flex-wrap: wrap;
 }
 
-#left-top-banner{
-    width: 380px;
-    font-size: 0;
+.bottom-banner-warp {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
-#right-top-banner{
-    width: 380px;
-    font-size: 0;
+#image-slider {
+    display: none;
 }
 
-#left-bottom-banner{
-    width: 780px;
-    font-size: 0;
+@media all and (max-width: 1240px) {
+    .bottom-banner-warp {
+        display: none;
+    }
 }
 
-#right-banner-container{
-    width: 33.33%;
-    font-size: 0;
+@media all and (max-width: 1200px) {
+    .top-banners-warp {
+        width: 620px;
+        justify-content: space-around;
+    }
+
+    .top-banner {
+        margin-top: 10px;
+    }
+
 }
+
+@media all and (max-width: 600px) {
+    .top-banners-warp {
+        width: 310px;
+        justify-content: center;
+    }
+
+    .top-banner {
+        display: none;
+    }
+
+    #image-slider {
+        display: flex;
+        width: 310px;
+        z-index: 100;
+    }
+
+}
+
+/*-------------------------------------*/
 
 .new-arrivals-window{
     flex-wrap: nowrap;

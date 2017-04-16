@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Название бренда</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="extra.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
     <script>
         $(document).ready(function(){
 
@@ -47,8 +49,7 @@
             });
 
             $('#for-children-con').mouseover(function(){
-                var windowWidth = $('#for-women-con').outerWidth() + $('#for-men-con').outerWidth() + $('#for-children-con').outerWidth() + $('#bags-con').outerWidth();
-                $('#for-women').css('display','flex').css('width', windowWidth).append("<div>Обувь</div>" +
+                $('#for-women').css('display', 'flex').css('width', $('')).append("<div>Обувь</div>" +
                     "<div>Мальчикам</div>" +
                     "<div>Ботинки</div>" +
                     "<div>Полуботинки</div>" +
@@ -83,6 +84,33 @@
             });
         });
     </script>
+
+    <script>
+        var i = 0;
+        var imgs = ['assets/banners/1.jpg', 'assets/banners/2.jpg', 'assets/banners/3.jpg', 'assets/banners/4.jpg']; //Добавте свои картинки через запятую
+
+        console.log('fefgfg');
+        $("#image-slider").swipe({
+            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+                console.log("You swiped " + direction);
+            }
+        });
+
+
+        //            .swipeLeft(function () {
+        //            console.log('left');
+        //            i--;
+        //            if (i === -1) i = 4;
+        //            $('#image').src = imgs[2];
+        //        }).swipeRight(function () {
+        //            i++;
+        //            if (i === 4) i = 0;
+        //            $('#image').src = imgs[3];
+        //        });
+
+
+    </script>
+
 </head>
 <body>
 <header>
@@ -100,11 +128,11 @@
         </div>
     </div>
     <div class="right-top-head">
-        <div class="basket-con">
-            <div class="basket">
+        <div class="basket-container">
+            <div id="basket">
                 <a href="#">Корзина</a>
             </div>
-            <div class="login">
+            <div id="login">
                 <a href="#">Войти</a>
             </div>
         </div>
@@ -120,7 +148,7 @@
 </header>
 
 <div id="submenu"><!-- Дополнительное меню -->
-    <div class="submenu-con">
+    <div id="submenu-container">
         <div class="submenu-it">
             <a id='for-women-con' href="#">Для женщин</a>
             <div id="for-women">
@@ -138,98 +166,80 @@
 
             </div>
         <div class="submenu-it">
-            <a id="bags-con" style="border-right: 0; white-space: nowrap;" href="#" href="#">Сумки и аксессуары</a>
+            <a id="bags-con" href="#" href="#">Сумки и аксессуары</a>
             <div id="bags">
 
             </div>
         </div>
     </div>
-
-
 </div>
 
 <div class="main-page">
 
 
-
-    <div class="banner-container">
-        <div id="left-banner-container">
-            <div id="left-top-banner"><img src="assets/380580_banner.jpg"></div>
-            <div id="right-top-banner"><img src="assets/380580_banner2.jpg"></div>
-            <div id="left-bottom-banner"><img src="assets/780200_banner.jpg"></div>
-        </div>
-        <div id="right-banner-container">
-            <div><img src="assets/380800_banner.JPG"></div>
-        </div>
-    </div>
-
-    <div class="new-arrivals-window">
-        <div class="shoes-container">
-            <div class="shoe"><img src="assets/shoes/1.jpg"></div>
-            <div class="shoe"><img src="assets/shoes/2.jpg"></div>
-            <div class="shoe"><img src="assets/shoes/3.jpg"></div>
-            <div class="shoe"><img src="assets/shoes/4.jpg"></div>
-            <div class="shoe" style="margin-right: 0"><img src="assets/shoes/5.jpg"></div>
-        </div>
-    </div>
-
-    <div class="shop-window">
-        <div class="shoes-container">
-            <div class="shoe"><img src="assets/shoes/6.jpg"></div>
-            <div class="shoe"><img src="assets/shoes/7.jpg"></div>
-            <div class="shoe"><img src="assets/shoes/8.jpg"></div>
-            <div class="shoe"><img src="assets/shoes/9.jpg"></div>
-            <div class="shoe" style="margin-right: 0"><img src="assets/shoes/10.jpg"></div>
-        </div>
-    </div>
-
-    <div class="about">
-        <div class="about-container">
-            <h2>О нас</h2>
-            <div>Официальный интернет-магазин ECCO представляет коллекцию обуви весна-лето 2016 и лучшие модели прошлых сезонов. Выбирайте классические туфли и сумки из кожи премиум-класса, кроссовки и рюкзаки, ботинки на каждый день и аксессуары для вашего гардероба. Скандинавский стиль ECCO легко вбирает в себя модные тренды — в коллекциях есть актуальные хайтопы, слипоны, сникеры, и конечно, классическая качественная обувь. Оцените легкость, мягкость и комфорт, которые принесли датскому бренду популярность в 88 странах мира. За внешним совершенством дизайна скрыта колоссальная работа с материалами и технологиями, благодаря которой стильная обувь становится по-настоящему удобной. </div>
-        </div>
-    </div>
-
-
-    <div id="footer">
-        <div class="wrapper">
-            <div id ="about-footer" class="footer-con">
-                <div class="li-header">О компании</div>
-                <div>Контакты</div>
-                <div>Вакансии</div>
-                <div>Партнерам</div>
-            </div>
-            <div id="help-footer" class="footer-con">
-                <div class="li-header">Помощь</div>
-                <div>Как оформить заказ</div>
-                <div>Как подобрать размер</div>
-                <div>Условия доставки</div>
-                <div>Возврат</div>
+    <div class="top-banners-container">
+        <div class="top-banners-warp">
+            <div class="top-banner"><a href="#"><img src="assets/banners/1.jpg"></a></div>
+            <div class="top-banner"><a href="#"><img src="assets/banners/2.jpg"></a></div>
+            <div class="top-banner"><a href="#"><img src="assets/banners/3.jpg"></a></div>
+            <div class="top-banner"><a href="#"><img src="assets/banners/4.jpg"></a></div>
+            <div id="image-slider">
+                <img id="image" src="assets/banners/1.jpg">
             </div>
 
-            <div id="social-footer" class="footer-con">
-                <div class="li-header">Мы в соцсетях</div>
-                <div class="social-footer-col">
-                    <div><img src="assets/social_icons/vk.png"></div>
-                    <div><img src="assets/social_icons/facebook.jpg"></div>
-                    <div><img src="assets/social_icons/o.jpg"></div>
-                    <div><img src="assets/social_icons/instagram-logo.png"></div>
+        </div>
+    </div>
+
+    <div class="bottom-banner-warp">
+        <div class="bottom-banner"><a href="#"><img src="assets/banners/5.jpg"></a></div>
+    </div>
+    <!--
+        <div class="about">
+            <div class="about-container">
+                <h2>О нас</h2>
+                <div>Официальный интернет-магазин ECCO представляет коллекцию обуви весна-лето 2016 и лучшие модели прошлых сезонов. Выбирайте классические туфли и сумки из кожи премиум-класса, кроссовки и рюкзаки, ботинки на каждый день и аксессуары для вашего гардероба. Скандинавский стиль ECCO легко вбирает в себя модные тренды — в коллекциях есть актуальные хайтопы, слипоны, сникеры, и конечно, классическая качественная обувь. Оцените легкость, мягкость и комфорт, которые принесли датскому бренду популярность в 88 странах мира. За внешним совершенством дизайна скрыта колоссальная работа с материалами и технологиями, благодаря которой стильная обувь становится по-настоящему удобной. </div>
+            </div>
+        </div>
+    -->
+    <!--
+        <div id="footer">
+            <div class="wrapper">
+                <div id ="about-footer" class="footer-con">
+                    <div class="li-header">О компании</div>
+                    <div>Контакты</div>
+                    <div>Вакансии</div>
+                    <div>Партнерам</div>
                 </div>
-            </div>
-            <div id="payment-footer" class="footer-con">
-                <div class="payment-head">
-                    <div class="li-header">Способы оплаты</div>
+                <div id="help-footer" class="footer-con">
+                    <div class="li-header">Помощь</div>
+                    <div>Как оформить заказ</div>
+                    <div>Как подобрать размер</div>
+                    <div>Условия доставки</div>
+                    <div>Возврат</div>
                 </div>
-                <div class="payment-footer-col">
-                    <div><img src="assets/payment/visa.png"></div>
-                    <div><img src="assets/payment/mastercard.png"></div>
+
+                <div id="social-footer" class="footer-con">
+                    <div class="li-header">Мы в соцсетях</div>
+                    <div class="social-footer-col">
+                        <div><img src="assets/social_icons/vk.png"></div>
+                        <div><img src="assets/social_icons/facebook.jpg"></div>
+                        <div><img src="assets/social_icons/o.jpg"></div>
+                        <div><img src="assets/social_icons/instagram-logo.png"></div>
+                    </div>
+                </div>
+                <div id="payment-footer" class="footer-con">
+                    <div class="payment-head">
+                        <div class="li-header">Способы оплаты</div>
+                    </div>
+                    <div class="payment-footer-col">
+                        <div><img src="assets/payment/visa.png"></div>
+                        <div><img src="assets/payment/mastercard.png"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        -->
 </div>
-
-
 
 </body>
 </html>
